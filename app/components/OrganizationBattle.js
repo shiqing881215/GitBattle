@@ -30,7 +30,7 @@ class OrganizationInput extends React.Component {
   }
   handleSubmit(event) {
     event.preventDefault();
-    debugger;
+
     this.props.onSubmit(
       this.props.id,
       this.state.orgname
@@ -88,8 +88,6 @@ class OrganizationBattle extends React.Component {
   }
 
   handleSubmit(id, orgname) {
-    debugger;
-
     var newState = {};
     newState[id + 'Name'] = orgname;
     // @TODO Modify the url
@@ -97,7 +95,7 @@ class OrganizationBattle extends React.Component {
     // due to the avater url contains the orgId. 
     // So we have to do an api call to get this
     // Note : here we use lambda since we need this works
-    orgApi.getOrg(orgname).then(orgResult => {
+    orgApi.getOrgInfo(orgname).then(orgResult => {
         newState[id + 'Image'] = orgResult["avatar_url"];
         
         this.setState(newState);
