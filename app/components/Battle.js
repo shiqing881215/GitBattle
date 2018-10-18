@@ -3,6 +3,8 @@ var PropTypes = require('prop-types');
 var Link = require('react-router-dom').Link;
 var PlayerPreview = require('./PlayerPreview');
 
+// ---------------- PlayerInput ----------------
+
 class PlayerInput extends React.Component {
   constructor(props) {
     super(props);
@@ -62,6 +64,11 @@ PlayerInput.propTypes = {
 PlayerInput.defaultProps = {
   label: 'Username',
 }
+
+// ---------------- PlayerInput end ----------------
+
+
+// ---------------- Battle ----------------
 
 class Battle extends React.Component {
   constructor(props) {
