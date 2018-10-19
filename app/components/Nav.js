@@ -11,6 +11,9 @@ function Nav () {
         <NavLink activeClassName='active' to='/battle'>Battle</NavLink>
       </li>
       <li>
+        <NavLink activeClassName='active' to='/orgbattle'>TeamBattle</NavLink>
+      </li>
+      <li>
         <NavLink activeClassName='active' to='/popular'>Popular</NavLink>
       </li>
     </ul>

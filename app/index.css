@@ -10,7 +10,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #d0021b;
+  color: #296ddb;
 }
 
 ul {
@@ -82,8 +82,13 @@ li {
 
 .home-container {
   display: flex;
+}
+
+.home-battle-container {
+  display: flex;
   flex-direction: column;
   align-items: center;
+  min-width: 500px;
 }
 
 .nav {
@@ -134,7 +139,7 @@ li {
 .reset {
   border: none;
   background: transparent;
-  color: #d0021b;
+  color: #296ddb;
   display: block;
   width: 100%;
   text-align: center;
@@ -142,4 +147,23 @@ li {
 
 .reset:hover {
   cursor: pointer;
+}
+
+.logo {
+  height: 70px;
+  width: 70px;
+}
+
+.smallLogo {
+  height: 50px;
+  width: 50px;
+}
+
+.title {
+  display: flex;
+}
+
+.trend-title {
+  display: flex;
+  justify-content: center;
 }
